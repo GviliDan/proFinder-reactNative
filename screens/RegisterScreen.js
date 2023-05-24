@@ -242,6 +242,6 @@ const styles = StyleSheet.create({
     borderColor: 'lightgray',
     backgroundColor: 'white',
     color: 'black',
-    fontSize: 16,
+    fontSize: 17,
   },
 });
