@@ -238,7 +238,7 @@ const styles = StyleSheet.create({
   searchTextInputStyle: {
     padding: 12,
     borderWidth: 1,
-    borderRadius: 8,
+    borderRadius: 9,
     borderColor: 'lightgray',
     backgroundColor: 'white',
     color: 'black',
