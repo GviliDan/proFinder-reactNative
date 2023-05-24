@@ -6,8 +6,8 @@ import SelectDropdown from 'react-native-select-dropdown';
 import { get, child, ref } from 'firebase/database';
 
 const SearchScreen = () => {
-    const [value, setValue] = useState(null);
-    const [value2, setValue2] = useState(null);
+    const [value, setValue] = useState(null); //The value of the job
+    const [value2, setValue2] = useState(null); //The value of the area
 
     const items = ['Software Engineer', 'Product Manager', 'Data Analyst', 'UX Designer', 'Marketing Specialist', 'Graphic Designer', 'Web Developer', 'Accountant', 'Sales Representative', 'Human Resources Manager', 'Project Manager', 'Financial Analyst', 'Operations Manager', 'Civil Engineer', 'Mechanical Engineer', 'Electrical Engineer', 'Architect', 'Lawyer', 'Doctor', 'Nurse', 'Pharmacist', 'Teacher', 'Chef', 'Plumber', 'Electrician', 'Carpenter', 'Mechanic', 'Locksmith', 'Painter', 'Gardener'];
     const navigation = useNavigation();

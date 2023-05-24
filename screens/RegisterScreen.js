@@ -143,8 +143,6 @@ const RegisterScreen = () => {
           onPress={() => {
             if (fullName && email && password && job && phoneNumer && area) {
               handleSignUp();
-              create();
-              navigation.replace("SearchScreen")
             }
             else
               alert("You didn't fill in all the details");
