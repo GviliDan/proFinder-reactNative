@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
     marginTop: "3%",
   },
   buttonTextStyle: {
-    fontSize: 16,
+    fontSize: 17,
     color: 'black',
   },
   dropdownStyle: {
