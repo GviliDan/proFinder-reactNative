@@ -152,11 +152,12 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: "#E5E5E5",
         padding: 10,
-        marginTop: 20,
+        marginTop: 15,
         width: "100%", // add this line
     },
     resultText: {
         fontSize: 18,
+        textAlign: 'center',
         color: "#444",
         marginBottom: 5,
     },
@@ -233,7 +234,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         alignItems: 'center',
         marginTop: 20,
-        marginBottom: 10
+        marginBottom: 20
     },
     signOutButtonText: {
         color: '#FFF',
