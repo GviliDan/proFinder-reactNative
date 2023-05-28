@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { TextInput } from 'react-native-gesture-handler'
 import { auth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from '../firebase';
 import { useNavigation } from '@react-navigation/native';
+import { Image } from 'react-native';
 
 
 const LoginScreen = () => {
@@ -40,6 +41,17 @@ const LoginScreen = () => {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       keyboardVerticalOffset={Platform.OS === "ios" ? 0 : 20}
     >
+
+      <View style={{ marginTop: -150 }} >
+      <Image
+  source={require('../grapic/logo_gif2.gif')}
+  style={{ width: 500, height: 500 }}
+  resizeMode="contain"
+/>
+
+      </View>
+
+
       <View style={styles.inputContainer}>
         <TextInput
           placeholder="Email"
@@ -81,6 +93,7 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     width: '80%'
+    ,marginTop: -135
   },
   input: {
     backgroundColor: 'white',
