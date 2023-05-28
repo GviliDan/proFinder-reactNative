@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/core';
 import { auth, db } from '../firebase';
 import SelectDropdown from 'react-native-select-dropdown';
 import { get, child, ref } from 'firebase/database';
+import { Image } from 'react-native';
 
 const SearchScreen = () => {
     const [value, setValue] = useState(null); //The value of the job
@@ -79,7 +80,38 @@ const SearchScreen = () => {
     console.log("Search results state:", searchResults);
 
     return (
+
         <View style={styles.container}>
+            <View style={{marginBottom:30, 
+                            alignItems: 'stretch',                         
+                        }}>
+
+                <Image
+                    source={require('../grapic/small_logo.png')}
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 60,
+                        width: 140,
+                        height: 140,
+                        
+                }}
+                 resizeMode="contain"
+                />
+                <Image
+                    source={require('../grapic/line.jpg')}
+                    style={{
+                        position: 'absolute',
+                        top: 40,
+                        left: -200,
+                        width: 400,
+                        height: 100,
+                        
+                }}
+                 resizeMode="contain"
+                />
+
+            </View>
             <Text style={styles.question}>Search for a professional</Text>
             <View style={styles.dropdownContainer}>
                 <SelectDropdown
