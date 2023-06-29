@@ -32,7 +32,7 @@ const LoginScreen = () => {
   }
 
   const handleRegister = () => {
-    navigation.navigate("Home");
+    navigation.navigate("RegisterScreen");
   };
 
   return (
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontWeight: '700',
-    fontSize: 16,
+    fontSize: 17,
   },
   smallButtonText: {
     color: 'white',
