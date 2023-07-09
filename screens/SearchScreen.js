@@ -18,7 +18,6 @@ const SearchScreen = () => {
   const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
-<<<<<<< HEAD
 
   }, [searchText]); 
 
@@ -39,28 +38,6 @@ const SearchScreen = () => {
       if (value || value2) {
         let results = users;
 
-=======
-    handleSearch();
-  }, [searchText]); // Run the search whenever the search text changes
-
-  const handleSignOut = () => {
-    auth
-      .signOut()
-      .then(() => {
-        navigation.replace('Login');
-      })
-      .catch((error) => alert(error.message));
-  };
-
-  const handleSearch = async () => {
-    try {
-      const snapshot = await get(child(ref(db), 'Users'));
-      const users = Object.values(snapshot.val());
-
-      if (value || value2) {
-        let results = users;
-
->>>>>>> a9fe51bac0754bb4a8f47b058a43ced555d42338
         if (value) {
           results = results.filter((user) => user.job === value);
         }
@@ -107,25 +84,15 @@ const SearchScreen = () => {
 
   return (
     <View style={styles.container}>
-<<<<<<< HEAD
       <View style={{ marginBottom: 15, alignItems: 'stretch' }}>
-=======
-      <View style={{ marginBottom: 30, alignItems: 'stretch' }}>
->>>>>>> a9fe51bac0754bb4a8f47b058a43ced555d42338
         <Image
           source={require('../grapic/small_logo.png')}
           style={{
             position: 'absolute',
             top: 0,
-<<<<<<< HEAD
             left: 70,
             width: 120,
             height: 120,
-=======
-            left: 60,
-            width: 140,
-            height: 140,
->>>>>>> a9fe51bac0754bb4a8f47b058a43ced555d42338
           }}
           resizeMode="contain"
         />
@@ -133,11 +100,7 @@ const SearchScreen = () => {
           source={require('../grapic/line.jpg')}
           style={{
             position: 'absolute',
-<<<<<<< HEAD
             top: 30,
-=======
-            top: 40,
->>>>>>> a9fe51bac0754bb4a8f47b058a43ced555d42338
             left: -200,
             width: 400,
             height: 100,
@@ -235,11 +198,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 10,
     alignItems: 'center',
-<<<<<<< HEAD
     marginTop: 1,
-=======
-    marginTop: 20,
->>>>>>> a9fe51bac0754bb4a8f47b058a43ced555d42338
     shadowColor: '#2D9CDB',
     shadowOffset: {
       width: 0,
