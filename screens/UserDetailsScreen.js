@@ -49,9 +49,12 @@ const UserDetailsScreen = ({ route }) => {
             console.log("Logged in as:", loggedInUser.email);
             if (newReview) {
                 try {
+                    const updatedReviews = [...reviews, newReview];
+                    setReviews(updatedReviews);
                     await set(ref(db, `Users/${currentUserPhoneNumber}`), {
                         ...user,
                         reviews: { ...reviews, [Date.now()]: newReview },
+                        
                     });
                     setNewReview('');
                     alert('Review added successfully');
