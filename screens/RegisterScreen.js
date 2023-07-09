@@ -62,21 +62,21 @@ const RegisterScreen = () => {
 
   const handleSignUp = () => {
     createUserWithEmailAndPassword(auth, email, password)
-      .then(() => {
-        signInWithEmailAndPassword(auth, email, password)
+      // .then(() => {
+      //   signInWithEmailAndPassword(auth, email, password)
           .then((userCredential) => {
             const user = userCredential.user;
             console.log("Logged in as:", user.email);
             create();
-            navigation.replace("SearchScreen");
+            // navigation.replace("SearchScreen");
           })
           .catch((error) => {
             alert(error.message);
           });
-      })
-      .catch((error) => {
-        alert(error.message);
-      });
+      // })
+      // .catch((error) => {
+      //   alert(error.message);
+      // });
   };
 
 
