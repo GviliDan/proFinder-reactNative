@@ -13,6 +13,3 @@ if (window.document) {
   ));
   AppRegistry.runApplication(appName, { initialProps: {}, rootTag: document.getElementById('app-root') });
 }
- 
-
-// check
