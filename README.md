@@ -13,6 +13,10 @@ proFinder is a versatile web application built with React Native that allows use
 - Review System for Users' Feedback 📝🌟
 - Community-Driven Networking Platform 👥🌐
 
+## **Backend Powered by Google Firebase**
+- Authentication for Secure User Access 🔒
+- Realtime Database for Dynamic Content Updates 🔄
+
 ## **Objective**
 Our goal is to bridge the gap between users and professionals by providing a seamless and efficient platform for discovery and connection. Join us on this journey to enhance the way we find and engage with skilled experts from various fields. 🤝🌈
 
@@ -20,5 +24,3 @@ Our goal is to bridge the gap between users and professionals by providing a sea
 Get started today by accessing proFinder through the following link: [proFinder Web App](https://reacthosting-93e1d.web.app/)
 
 Let's empower users and professionals alike with proFinder! 🚀📱
-
-
